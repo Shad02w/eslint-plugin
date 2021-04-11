@@ -1,0 +1,22 @@
+{
+  "name": "@shad02w/eslint-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.9",
+    "@types/prettier": "^2.2.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shad02w",
+  "license": "MIT"
+}
