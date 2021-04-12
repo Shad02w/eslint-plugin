@@ -1,7 +1,3 @@
-interface Car {
-    brand: string
-}
+import { recommended } from './config/recommended'
 
-export const car: Car = { brand: "benz" }
-
-export const rules = {}
+export const config = { recommended }

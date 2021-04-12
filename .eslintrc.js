@@ -1,25 +1,17 @@
-// @ts-check
+const { config } = require('./dist')
 
 /** @type {import('eslint').Linter.Config} */
-const recommended = {
-    parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: "module",
-        ecmaFeatures: { jsx: true }
-    },
-    env: {
-        es6: true
-    },
-    extends: [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
+module.exports = {
+    ...config.recommended,
     rules: {
-        "no-shadow": "warn",
-        "comma-dangle": ["warn", "never"],
-        "react/jsx-max-props-per-line": [1, { maximum: 2, when: "always" }]
-    }
+        'no-unused-vars': 'off'
+    },
+    overrides: [
+        {
+            files: ['.eslintrc.js'],
+            rules: {
+                '@typescript-eslint/no-var-requires': 0
+            }
+        }
+    ]
 }
-
-module.exports = { recommended }
