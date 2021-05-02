@@ -1,8 +1,13 @@
-const { config } = require('./dist')
-
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-    ...config.recommended,
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: 'module'
+    },
+    env: {
+        node: true
+    },
     rules: {
         'no-unused-vars': 'off'
     },

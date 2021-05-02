@@ -1,3 +1,4 @@
-import { recommended } from './config/recommended'
+import { baseline } from './config/baseline'
 
-export const config = { recommended }
+//Name
+export const config = { baseline }
