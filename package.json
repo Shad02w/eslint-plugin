@@ -1,7 +1,7 @@
 {
   "name": "@shad02w/eslint-plugin",
   "author": "Shad02w",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "eslint plugin for personal use",
   "main": "index.js",

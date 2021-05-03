@@ -1,3 +1,3 @@
 import { baseline } from './config/baseline'
 
-export const config = { baseline }
+export const configs = { baseline }
