@@ -29,7 +29,7 @@ export const baseline: Linter.Config = {
         // eslint-plugin-react
         'react/jsx-max-props-per-line': [1, { maximum: 2, when: 'always' }],
         // eslint-plugin-eslint-comments
-        'eslint-comments/no-unused-disable': ['error', 'always'],
+        'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/require-description': [
             'error',
             {
