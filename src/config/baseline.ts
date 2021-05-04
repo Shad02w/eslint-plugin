@@ -27,6 +27,7 @@ export const baseline: Linter.Config = {
         ],
         // @typescript-eslint/eslint-plugin
         '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         // eslint-plugin-react
         'react/jsx-max-props-per-line': [1, { maximum: 2, when: 'always' }],
         // eslint-plugin-eslint-comments
