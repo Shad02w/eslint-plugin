@@ -15,7 +15,7 @@ export const baseline: Linter.Config = {
         'no-shadow': 'warn',
         'spaced-comment': ['error', 'always'],
         'comma-dangle': ['warn', 'never'],
-        quote: ['warn', 'single', { allowTemplateLiterals: true }],
+        quotes: ['warn', 'single', { allowTemplateLiterals: true }],
         eqeqeq: ['error', 'always', { null: 'ignore' }],
         semi: ['warn', 'never', { beforeStatementContinuationChars: 'always' }],
         'lines-between-class-members': ['error', 'always'],
@@ -38,7 +38,7 @@ export const baseline: Linter.Config = {
             }
         ],
         // eslint-plugin-import
-        'import/prevent-default-import': 'error',
+        'import/no-default-import': 'error',
         'import/no-relative-parent-imports': 'error',
         'import/no-useless-path-segments': 'error',
         'import/exports-last': 'error',
