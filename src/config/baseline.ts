@@ -38,11 +38,11 @@ export const baseline: Linter.Config = {
             }
         ],
         // eslint-plugin-import
-        'import/no-default-import': 'error',
         'import/no-relative-parent-imports': 'error',
         'import/no-useless-path-segments': 'error',
         'import/exports-last': 'error',
         'import/first': 'error',
+        'import/no-default-export': 'error',
         'import/newline-after-import': ['error', { count: 1 }],
         // eslint-plugin-react-hooks
         'react-hooks/rules-of-hooks': 'error',
