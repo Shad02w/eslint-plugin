@@ -8,7 +8,7 @@ export const baseline: Linter.Config = {
     },
     parser: '@typescript-eslint/parser',
     extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
-    plugins: ['eslint-comments', 'import', 'react-hooks'],
+    plugins: ['eslint-comments', '@typescript-eslint', 'eslint-comments', 'import', 'react', 'react-hooks'],
     rules: {
         // eslint
         'no-var': 'error',
