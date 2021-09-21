@@ -1,5 +1,6 @@
 import path from 'path'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
+import del from 'rollup-plugin-delete'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 import copy from 'rollup-plugin-copy'
@@ -13,6 +14,8 @@ const config = {
     },
     external: ['eslint', /^eslint-.*/],
     plugins: [
+        // Clean up outDir
+        del({ targets: 'build/*' }),
         // Find modules using Node Resolution algorithm
         nodeResolve({ extensions: ['.ts', '.js'] }),
         // Convert CommonJS module to ES6
@@ -26,6 +29,7 @@ const config = {
                 }
             }
         }),
+        // Copy package.json
         copy({
             targets: [{ src: 'package.json', dest: 'build' }]
         })
